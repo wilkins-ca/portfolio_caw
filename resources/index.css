@@ -13,9 +13,17 @@ img{
     background-position: center;
 }
 
-.greeting{
+.text{
+    position:relative;
     text-align: center;
-    padding-top: 50%;
+    color: black;;
+}
+
+.greeting, p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* .nav{
@@ -53,3 +61,20 @@ img{
 .nav li:hover .dropdown{
     display: block;
 } */
+
+
+ul{
+    list-style: none;
+    text-align: center;
+    top: 0%;
+}
+
+li{
+    display: inline-block;
+    padding: 2%;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
