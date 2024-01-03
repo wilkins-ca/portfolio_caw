@@ -1,0 +1,24 @@
+body, html{
+    height: 100%;
+    background-color: #c89666;
+    display: grid;
+}
+
+.homeButton {
+    position: relative;
+    height: fit-content;
+}
+
+.home {
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    height: fit-content;
+}

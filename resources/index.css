@@ -1,6 +1,7 @@
 body, html{
     height: 100%;
-    background-color: rgba(238, 215, 182, 0.815);
+    background-color: #c89666;
+    display: grid;
 }
 
 * {
@@ -12,7 +13,7 @@ body, html{
 ul {
     top: 0;
     text-align: center;
-    color: black;
+    background-color: #2D545E;
     list-style: none;
 }
 
@@ -23,17 +24,10 @@ li{
 
 a {
     text-decoration: underline;
-    color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
 }
-
-img {
-    width: 50%;
-    height: 599px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 
 /* container of p and greeting */
 .text{
@@ -41,14 +35,61 @@ img {
     position:relative;
     text-align: center;
     color: black;
-    top: 33%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
+    outline: auto;
+    padding: 2%;
+    line-height: 50px;
+    background-color: #e1b382;
+}
 
-    /* set up background image */
-    /* background-image: url("images/flowers.png");
-    background-position-x: center;
-    background-position-y: top;
-    background-size: contain; */
+.text h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+}
+
+.text p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.text h3 { 
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* change position of text based on laptop screen height */
+@media screen and (max-height: 599px) {
+    .text {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
+}
+
+/* change format of text box based on large phone screen size */
+@media screen and (max-width: 425px){
+    .text {
+        width: 70%;
+        padding: 4%;
+        top: 44%;
+    }
+}
+
+/* change format of text box based on small phone screen size */
+@media screen and (max-width: 320px){
+    .text {
+        padding-top: 6%;
+    }
+}
+
+/* change format of text box based on tablet screen size */
+@media screen and (max-width: 768px) {
+    .text {
+        top: 45%;
+        left: 50%;
+        width: 70%;
+    }
 }
