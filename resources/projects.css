@@ -5,6 +5,7 @@ body, html{
     padding-top: 0%;
 }
 
+/* set menu color and position */
 .menubar {
     text-align: center;
     background-color: #2D545E;
@@ -23,23 +24,35 @@ h1 {
     font-size: 30px;
 }
 
-/* .projects  {
-    display: inline;
-    margin-top: 2%;
-} */
-
+/* set image-links position for large screen e.g. monitor */
 .projects {
-    width: 80%;
+    width: 70%;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
+/* set size and margin of images */
 .projects img {
     height: 400px;
     width: 600px;
     margin: 2%;
+}
+
+/* center image-links in one column for laptop size screen */
+@media screen and (max-height: 599px) {
+    .projects{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .projects img {
+        height: 150px;
+        width: 250px;
+    }
+
+    .projects {
+        width: 50%;
+    }
 }

@@ -2,6 +2,7 @@ body, html{
     height: 100%;
     background-color: #c89666;
     display: grid;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 * {
@@ -46,18 +47,15 @@ a {
 }
 
 .text h1 {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 70px;
 }
 
 .text p {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 
 .text h3 { 
     font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 /* change position of text based on laptop screen height */
